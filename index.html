@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SongJunPyo의 개발 학습과 프로젝트를 소개하는 포트폴리오">
+  <title>SongJunPyo | Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body class="portfolio-page">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand mono" href="#top">SJP / 2026</a>
+      <button class="menu-button" type="button" aria-label="메뉴 열기" aria-expanded="false">☰</button>
+      <nav class="site-nav" aria-label="주요 메뉴"><ul><li><a href="./index.html" aria-current="page">portfolio</a></li><li><a href="./keyword.html">keywords</a></li></ul></nav>
+    </div>
+  </header>
+  <div class="portfolio-shell">
+    <nav class="section-rail" aria-label="포트폴리오 섹션 이동">
+      <a href="#about" class="active">about</a>
+      <a href="#stack">stack</a>
+      <a href="#credentials">credentials</a>
+      <a href="#experience">experience</a>
+      <a href="#work">work</a>
+    </nav>
+    <main id="top">
+    <section class="hero" aria-labelledby="hero-title"><div class="container"><p class="section-marker">Developer portfolio / 2026</p><h1 id="hero-title">배우고, 만들고,<br><em>끝까지 다듬습니다.</em></h1><div class="hero-row"><p class="hero-copy">안녕하세요. SongJunPyo입니다. 웹의 언어와 AI의 가능성을 함께 공부하며, 작은 질문을 실제 동작하는 결과물로 바꾸고 있습니다.</p><a class="button" href="https://github.com/SongJunPyo" target="_blank" rel="noreferrer">GitHub 방문 <span aria-hidden="true">↗</span></a></div></div></section>
+    <section class="content-section" id="about" aria-labelledby="about-title"><div class="container"><hr class="section-rule"><div class="section-layout"><p class="section-marker">01 / About</p><p class="about-text" id="about-title">배우는 과정을 숨기지 않고 기록합니다. 문제를 만났을 때 멈추기보다, 원인을 찾아 다음 시도를 설계합니다.</p></div></div></section>
+    <section class="content-section" id="stack" aria-labelledby="stack-title"><div class="container"><hr class="section-rule"><div class="section-layout"><p class="section-marker">02 / Stack</p><div><h2 class="section-title" id="stack-title">Tools I use</h2><div class="chips" aria-label="기술 스택"><span class="chip">Java</span><span class="chip">Python</span><span class="chip">C</span><span class="chip">Linux</span><span class="chip">React</span><span class="chip">Flutter</span><span class="chip">MariaDB</span><span class="chip">MySQL</span><span class="chip">PyTorch</span><span class="chip">TensorFlow</span><span class="chip">GitHub</span><span class="chip">Slack</span><span class="chip">Discord</span><span class="chip">Notion</span></div></div></div></div></section>
+    <section class="content-section" id="credentials" aria-labelledby="credentials-title"><div class="container"><hr class="section-rule"><div class="section-layout"><p class="section-marker">03 / Credentials</p><div><h2 class="section-title" id="credentials-title">Proof of practice</h2><div class="credential-columns" style="margin-top:40px"><div><h3>자격증</h3><ul class="credential-list"><li><span>정보처리기사</span><time datetime="2026-06">2026.06</time></li><li><span>TOEIC Speaking 150</span><time datetime="2026-06">2026.06</time></li><li><span>SQL 개발자(SQLD)</span><time datetime="2025-04">2025.04</time></li><li><span>데이터분석 준전문가(ADsP)</span><time datetime="2025-03">2025.03</time></li><li><span>컴퓨터활용능력 1급</span><time datetime="2024-04">2024.04</time></li></ul></div><div><h3>수상</h3><ul class="credential-list"><li><span>TOPCIT 성적 우수 총장상</span><time datetime="2026-07">2026.07</time></li><li><span>봉림소프트웨어전시회 트랙상</span><time datetime="2026-06">2026.06</time></li><li><span>USG 캡스톤종합설계 최우수상</span><time datetime="2026-02">2026.02</time></li><li><span>SW-DNA² 창업아이디어 우수상</span><time datetime="2025-12">2025.12</time></li><li><span>유니콘 아이디어 경진대회 우수상</span><time datetime="2025-11">2025.11</time></li></ul></div></div></div></div></div></section>
+    <section class="content-section" id="experience" aria-labelledby="experience-title"><div class="container"><hr class="section-rule"><div class="section-layout"><p class="section-marker">04 / Experience</p><div><h2 class="section-title" id="experience-title">From idea to system</h2><div class="timeline" style="margin-top:40px"><article class="timeline-item"><time class="timeline-date" datetime="2026-06">2026.06</time><div><h3>LG전자 빌트인사업부 협력 과제</h3><p>시험항목·시료수 도출 시스템을 실제 업무에 적용했습니다. 부품 변경 이력 DB와 SQL 1차 필터링, LLM 판정을 결합한 하이브리드 매칭 로직을 개발했습니다.</p></div></article><article class="timeline-item"><time class="timeline-date" datetime="2025-12">2025.12</time><div><h3>safeS 동물병원 관리 서비스</h3><p>FastAPI와 Flutter, Kafka를 연결한 동물병원 관리 서비스를 배포하고 실사용 가능한 서비스로 운영했습니다.</p></div></article></div></div></div></div></section>
+    <section class="content-section" id="work" aria-labelledby="work-title"><div class="container"><hr class="section-rule"><div class="work-heading"><div><p class="section-marker">05 / Selected work</p><h2 class="section-title" id="work-title">Representative projects</h2></div><label><span class="sr-only">작업 필터</span><select class="filter" id="project-filter"><option value="all">전체 보기</option><option value="project">프로젝트</option></select></label></div><div class="project-grid">
+  <article class="project-card" data-type="project"><div class="card-meta"><span class="number mono">01</span><span class="badge">LLM / HACKATHON</span></div><h3>LGAimers 8기 해커톤</h3><p>LLM Quantization과 vLLM 기반 경량 추론 파이프라인을 구현해 최종 12위, 상위 3%를 기록했습니다.</p><div class="chips"><span class="chip">Python</span><span class="chip">vLLM</span><span class="chip">LLM</span></div><a class="card-link" href="https://github.com/SongJunPyo" target="_blank" rel="noreferrer">GitHub에서 보기 ↗</a></article>
+  <article class="project-card" data-type="project"><div class="card-meta"><span class="number mono">02</span><span class="badge">ML SYSTEM</span></div><h3>금융 이상거래 탐지</h3><p>결측 패턴 기반 이상거래 탐지 모델을 설계하고 DBSCAN과 LightGBM을 활용한 KCI 논문으로 발전시켰습니다.</p><div class="chips"><span class="chip">Machine Learning</span><span class="chip">DBSCAN</span><span class="chip">LightGBM</span></div><a class="card-link" href="https://github.com/SongJunPyo" target="_blank" rel="noreferrer">GitHub에서 보기 ↗</a></article>
+  <article class="project-card" data-type="project"><div class="card-meta"><span class="number mono">03</span><span class="badge">RECOMMENDATION</span></div><h3>먹을지도</h3><p>AI·SW융합 해커톤에서 팀장으로 유튜브 리뷰 분석 기반 맛집 추천 서비스를 리드하고 본선에 진출했습니다.</p><div class="chips"><span class="chip">FastAPI</span><span class="chip">React</span><span class="chip">MariaDB</span></div><a class="card-link" href="https://github.com/SongJunPyo" target="_blank" rel="noreferrer">GitHub에서 보기 ↗</a></article>
+    </div></div></section>
+    </main>
+    <footer class="site-footer"><div class="container footer-inner"><span class="mono">SONGJUNPYO / KEEP LEARNING</span><a href="mailto:jpyo40@gmail.com">jpyo40@gmail.com</a></div></footer>
+  </div>
+  <script>
+    const menuButton = document.querySelector('.menu-button');
+    const siteNav = document.querySelector('.site-nav');
+    const filter = document.querySelector('#project-filter');
+    const cards = document.querySelectorAll('.project-card');
+    const sectionLinks = document.querySelectorAll('.section-rail a');
+    const sections = [...document.querySelectorAll('main section[id]')];
+
+    menuButton.addEventListener('click', () => {
+      const isOpen = siteNav.classList.toggle('is-open');
+      menuButton.setAttribute('aria-expanded', String(isOpen));
+      menuButton.setAttribute('aria-label', isOpen ? '메뉴 닫기' : '메뉴 열기');
+    });
+
+    if (filter) {
+      filter.addEventListener('change', (event) => {
+        cards.forEach((card) => {
+          card.hidden = event.target.value !== 'all' && card.dataset.type !== event.target.value;
+        });
+      });
+    }
+
+    const setActiveSection = () => {
+      let currentId = 'about';
+      sections.forEach((section) => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= 180 && rect.bottom >= 180) {
+          currentId = section.id;
+        }
+      });
+
+      sectionLinks.forEach((link) => {
+        const isActive = link.getAttribute('href') === `#${currentId}`;
+        link.classList.toggle('active', isActive);
+      });
+    };
+
+    window.addEventListener('scroll', setActiveSection, { passive: true });
+    setActiveSection();
+  </script>
+</body>
+</html>
