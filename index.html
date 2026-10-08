@@ -7,78 +7,193 @@
   <title>SongJunPyo | Developer Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <script>
+    try {
+      var saved = localStorage.getItem('theme');
+      document.documentElement.dataset.theme = saved || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    } catch (e) {}
+  </script>
   <link rel="stylesheet" href="./style.css">
 </head>
-<body class="portfolio-page">
+<body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand mono" href="#top">SJP / 2026</a>
-      <button class="menu-button" type="button" aria-label="메뉴 열기" aria-expanded="false">☰</button>
-      <nav class="site-nav" aria-label="주요 메뉴"><ul><li><a href="./index.html" aria-current="page">portfolio</a></li><li><a href="./keyword.html">keywords</a></li></ul></nav>
+      <a class="brand" href="#top">SongJunPyo</a>
+      <nav class="site-nav" aria-label="주요 메뉴">
+        <a href="#about">소개</a>
+        <a href="#work">프로젝트</a>
+        <a href="#experience">경력</a>
+        <a href="#awards">수상·자격</a>
+        <a href="#stack">스택</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="다크 모드 전환" aria-pressed="false"></button>
     </div>
   </header>
-  <div class="portfolio-shell">
-    <nav class="section-rail" aria-label="포트폴리오 섹션 이동">
-      <a href="#about" class="active">about</a>
-      <a href="#stack">stack</a>
-      <a href="#credentials">credentials</a>
-      <a href="#experience">experience</a>
-      <a href="#work">work</a>
-    </nav>
-    <main id="top">
-    <section class="hero" aria-labelledby="hero-title"><div class="container"><p class="section-marker">Developer portfolio / 2026</p><h1 id="hero-title">배우고, 만들고,<br><em>끝까지 다듬습니다.</em></h1><div class="hero-row"><p class="hero-copy">안녕하세요. SongJunPyo입니다. 웹의 언어와 AI의 가능성을 함께 공부하며, 작은 질문을 실제 동작하는 결과물로 바꾸고 있습니다.</p><a class="button" href="https://github.com/SongJunPyo" target="_blank" rel="noreferrer">GitHub 방문 <span aria-hidden="true">↗</span></a></div></div></section>
-    <section class="content-section" id="about" aria-labelledby="about-title"><div class="container"><hr class="section-rule"><div class="section-layout"><p class="section-marker">01 / About</p><p class="about-text" id="about-title">배우는 과정을 숨기지 않고 기록합니다. 문제를 만났을 때 멈추기보다, 원인을 찾아 다음 시도를 설계합니다.</p></div></div></section>
-    <section class="content-section" id="stack" aria-labelledby="stack-title"><div class="container"><hr class="section-rule"><div class="section-layout"><p class="section-marker">02 / Stack</p><div><h2 class="section-title" id="stack-title">Tools I use</h2><div class="chips" aria-label="기술 스택"><span class="chip">Java</span><span class="chip">Python</span><span class="chip">C</span><span class="chip">Linux</span><span class="chip">React</span><span class="chip">Flutter</span><span class="chip">MariaDB</span><span class="chip">MySQL</span><span class="chip">PyTorch</span><span class="chip">TensorFlow</span><span class="chip">GitHub</span><span class="chip">Slack</span><span class="chip">Discord</span><span class="chip">Notion</span></div></div></div></div></section>
-    <section class="content-section" id="credentials" aria-labelledby="credentials-title"><div class="container"><hr class="section-rule"><div class="section-layout"><p class="section-marker">03 / Credentials</p><div><h2 class="section-title" id="credentials-title">Proof of practice</h2><div class="credential-columns" style="margin-top:40px"><div><h3>자격증</h3><ul class="credential-list"><li><span>정보처리기사</span><time datetime="2026-06">2026.06</time></li><li><span>TOEIC Speaking 150</span><time datetime="2026-06">2026.06</time></li><li><span>SQL 개발자(SQLD)</span><time datetime="2025-04">2025.04</time></li><li><span>데이터분석 준전문가(ADsP)</span><time datetime="2025-03">2025.03</time></li><li><span>컴퓨터활용능력 1급</span><time datetime="2024-04">2024.04</time></li></ul></div><div><h3>수상</h3><ul class="credential-list"><li><span>TOPCIT 성적 우수 총장상</span><time datetime="2026-07">2026.07</time></li><li><span>봉림소프트웨어전시회 트랙상</span><time datetime="2026-06">2026.06</time></li><li><span>USG 캡스톤종합설계 최우수상</span><time datetime="2026-02">2026.02</time></li><li><span>SW-DNA² 창업아이디어 우수상</span><time datetime="2025-12">2025.12</time></li><li><span>유니콘 아이디어 경진대회 우수상</span><time datetime="2025-11">2025.11</time></li></ul></div></div></div></div></div></section>
-    <section class="content-section" id="experience" aria-labelledby="experience-title"><div class="container"><hr class="section-rule"><div class="section-layout"><p class="section-marker">04 / Experience</p><div><h2 class="section-title" id="experience-title">From idea to system</h2><div class="timeline" style="margin-top:40px"><article class="timeline-item"><time class="timeline-date" datetime="2026-06">2026.06</time><div><h3>LG전자 빌트인사업부 협력 과제</h3><p>시험항목·시료수 도출 시스템을 실제 업무에 적용했습니다. 부품 변경 이력 DB와 SQL 1차 필터링, LLM 판정을 결합한 하이브리드 매칭 로직을 개발했습니다.</p></div></article><article class="timeline-item"><time class="timeline-date" datetime="2025-12">2025.12</time><div><h3>safeS 동물병원 관리 서비스</h3><p>FastAPI와 Flutter, Kafka를 연결한 동물병원 관리 서비스를 배포하고 실사용 가능한 서비스로 운영했습니다.</p></div></article></div></div></div></div></section>
-    <section class="content-section" id="work" aria-labelledby="work-title"><div class="container"><hr class="section-rule"><div class="work-heading"><div><p class="section-marker">05 / Selected work</p><h2 class="section-title" id="work-title">Representative projects</h2></div><label><span class="sr-only">작업 필터</span><select class="filter" id="project-filter"><option value="all">전체 보기</option><option value="project">프로젝트</option></select></label></div><div class="project-grid">
-  <article class="project-card" data-type="project"><div class="card-meta"><span class="number mono">01</span><span class="badge">LLM / HACKATHON</span></div><h3>LGAimers 8기 해커톤</h3><p>LLM Quantization과 vLLM 기반 경량 추론 파이프라인을 구현해 최종 12위, 상위 3%를 기록했습니다.</p><div class="chips"><span class="chip">Python</span><span class="chip">vLLM</span><span class="chip">LLM</span></div><a class="card-link" href="https://github.com/SongJunPyo" target="_blank" rel="noreferrer">GitHub에서 보기 ↗</a></article>
-  <article class="project-card" data-type="project"><div class="card-meta"><span class="number mono">02</span><span class="badge">ML SYSTEM</span></div><h3>금융 이상거래 탐지</h3><p>결측 패턴 기반 이상거래 탐지 모델을 설계하고 DBSCAN과 LightGBM을 활용한 KCI 논문으로 발전시켰습니다.</p><div class="chips"><span class="chip">Machine Learning</span><span class="chip">DBSCAN</span><span class="chip">LightGBM</span></div><a class="card-link" href="https://github.com/SongJunPyo" target="_blank" rel="noreferrer">GitHub에서 보기 ↗</a></article>
-  <article class="project-card" data-type="project"><div class="card-meta"><span class="number mono">03</span><span class="badge">RECOMMENDATION</span></div><h3>먹을지도</h3><p>AI·SW융합 해커톤에서 팀장으로 유튜브 리뷰 분석 기반 맛집 추천 서비스를 리드하고 본선에 진출했습니다.</p><div class="chips"><span class="chip">FastAPI</span><span class="chip">React</span><span class="chip">MariaDB</span></div><a class="card-link" href="https://github.com/SongJunPyo" target="_blank" rel="noreferrer">GitHub에서 보기 ↗</a></article>
-    </div></div></section>
-    </main>
-    <footer class="site-footer"><div class="container footer-inner"><span class="mono">SONGJUNPYO / KEEP LEARNING</span><a href="mailto:jpyo40@gmail.com">jpyo40@gmail.com</a></div></footer>
-  </div>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container">
+        <p class="marker">Developer Portfolio / 2026</p>
+        <h1>배우고, 만들고,<br><em>끝까지 다듬습니다.</em></h1>
+        <p class="hero-copy">안녕하세요. SongJunPyo입니다. 웹의 언어와 AI의 가능성을 함께 공부하며, 작은 질문을 실제 동작하는 결과물로 바꾸고 있습니다.</p>
+        <div class="hero-links">
+          <a href="mailto:jpyo40@gmail.com">jpyo40@gmail.com</a>
+          <a href="https://github.com/SongJunPyo" target="_blank" rel="noreferrer">GitHub ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container section-grid">
+        <h2 class="marker">소개</h2>
+        <div>
+          <div class="about">
+            <figure class="portrait">
+              <img src="./id.jpeg" alt="SongJunPyo 증명사진" width="413" height="531">
+            </figure>
+            <div>
+              <p class="about-text">배우는 과정을 숨기지 않고 기록합니다. 문제를 만났을 때 멈추기보다, 원인을 찾아 다음 시도를 설계합니다.</p>
+              <p class="tags" aria-label="관심 키워드">
+                <span>#AI시스템</span><span>#LLM</span><span>#vLLM</span><span>#FastAPI</span><span>#데이터분석</span><span>#SQL</span><span>#React</span><span>#Flutter</span><span>#UX</span>
+              </p>
+            </div>
+          </div>
+          <dl class="keywords">
+            <div>
+              <dt>AI &amp; System Design</dt>
+              <dd>LLM을 서비스로 연결하고, 모델과 인프라를 함께 설계하는 과정을 좋아합니다. 운영 가능한 AI 시스템을 실험하고 개선하는 데 집중합니다.</dd>
+            </div>
+            <div>
+              <dt>Data &amp; Problem Solving</dt>
+              <dd>데이터를 읽고, 패턴을 구조화하며, 실제 문제를 해결할 수 있는 기준으로 연결합니다. SQL과 분석을 바탕으로 실무적 결론을 만듭니다.</dd>
+            </div>
+            <div>
+              <dt>Product-minded Builder</dt>
+              <dd>기술을 그냥 만드는 것보다, 사용자가 이해하고 쓰는 데 의미가 있어야 한다고 생각합니다. 실제 서비스 흐름과 사용자 경험을 함께 고려합니다.</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="work">
+      <div class="container section-grid">
+        <h2 class="marker">프로젝트</h2>
+        <div class="projects">
+          <article class="project">
+            <span class="project-no">P.01</span>
+            <div>
+              <h3>LGAimers 8기 해커톤</h3>
+              <p class="project-kind">LLM / Hackathon</p>
+              <p>LLM Quantization과 vLLM 기반 경량 추론 파이프라인을 구현해 최종 12위, 상위 3%를 기록했습니다.</p>
+              <p class="tags"><span>Python</span><span>vLLM</span><span>LLM</span></p>
+              <a class="link" href="https://github.com/SongJunPyo" target="_blank" rel="noreferrer">GitHub ↗</a>
+            </div>
+          </article>
+          <article class="project">
+            <span class="project-no">P.02</span>
+            <div>
+              <h3>금융 이상거래 탐지</h3>
+              <p class="project-kind">ML System</p>
+              <p>결측 패턴 기반 이상거래 탐지 모델을 설계하고 DBSCAN과 LightGBM을 활용한 KCI 논문으로 발전시켰습니다.</p>
+              <p class="tags"><span>Machine Learning</span><span>DBSCAN</span><span>LightGBM</span></p>
+              <a class="link" href="https://github.com/SongJunPyo" target="_blank" rel="noreferrer">GitHub ↗</a>
+            </div>
+          </article>
+          <article class="project">
+            <span class="project-no">P.03</span>
+            <div>
+              <h3>먹을지도</h3>
+              <p class="project-kind">Recommendation · 팀장</p>
+              <p>AI·SW융합 해커톤에서 팀장으로 유튜브 리뷰 분석 기반 맛집 추천 서비스를 리드하고 본선에 진출했습니다.</p>
+              <p class="tags"><span>FastAPI</span><span>React</span><span>MariaDB</span></p>
+              <a class="link" href="https://github.com/SongJunPyo" target="_blank" rel="noreferrer">GitHub ↗</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="container section-grid">
+        <h2 class="marker">경력</h2>
+        <ol class="rows">
+          <li>
+            <time datetime="2026-06">2026.06</time>
+            <div>
+              <h3>LG전자 빌트인사업부 협력 과제</h3>
+              <p>시험항목·시료수 도출 시스템을 실제 업무에 적용했습니다. 부품 변경 이력 DB와 SQL 1차 필터링, LLM 판정을 결합한 하이브리드 매칭 로직을 개발했습니다.</p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2025-12">2025.12</time>
+            <div>
+              <h3>safeS 동물병원 관리 서비스</h3>
+              <p>FastAPI와 Flutter, Kafka를 연결한 동물병원 관리 서비스를 배포하고 실사용 가능한 서비스로 운영했습니다.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="awards">
+      <div class="container section-grid">
+        <h2 class="marker">수상·자격</h2>
+        <div class="two-col">
+          <div>
+            <h3 class="col-title">수상</h3>
+            <ul class="list">
+              <li><span>TOPCIT 성적 우수 총장상</span><time datetime="2026-07">2026.07</time></li>
+              <li><span>봉림소프트웨어전시회 트랙상</span><time datetime="2026-06">2026.06</time></li>
+              <li><span>USG 캡스톤종합설계 최우수상</span><time datetime="2026-02">2026.02</time></li>
+              <li><span>SW-DNA² 창업아이디어 우수상</span><time datetime="2025-12">2025.12</time></li>
+              <li><span>유니콘 아이디어 경진대회 우수상</span><time datetime="2025-11">2025.11</time></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="col-title">자격증</h3>
+            <ul class="list">
+              <li><span>정보처리기사</span><time datetime="2026-06">2026.06</time></li>
+              <li><span>TOEIC Speaking 150</span><time datetime="2026-06">2026.06</time></li>
+              <li><span>SQL 개발자(SQLD)</span><time datetime="2025-04">2025.04</time></li>
+              <li><span>데이터분석 준전문가(ADsP)</span><time datetime="2025-03">2025.03</time></li>
+              <li><span>컴퓨터활용능력 1급</span><time datetime="2024-04">2024.04</time></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="stack">
+      <div class="container section-grid">
+        <h2 class="marker">스택</h2>
+        <p class="tags tags-lg" aria-label="기술 스택">
+          <span>Java</span><span>Python</span><span>C</span><span>Linux</span><span>React</span><span>Flutter</span><span>MariaDB</span><span>MySQL</span><span>PyTorch</span><span>TensorFlow</span><span>GitHub</span><span>Slack</span><span>Discord</span><span>Notion</span>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>SongJunPyo / Keep learning</span>
+      <span><a href="mailto:jpyo40@gmail.com">jpyo40@gmail.com</a> · <a href="https://github.com/SongJunPyo" target="_blank" rel="noreferrer">GitHub</a></span>
+    </div>
+  </footer>
+
   <script>
-    const menuButton = document.querySelector('.menu-button');
-    const siteNav = document.querySelector('.site-nav');
-    const filter = document.querySelector('#project-filter');
-    const cards = document.querySelectorAll('.project-card');
-    const sectionLinks = document.querySelectorAll('.section-rail a');
-    const sections = [...document.querySelectorAll('main section[id]')];
+    const root = document.documentElement;
+    const toggle = document.querySelector('.theme-toggle');
+    const syncToggle = () => toggle.setAttribute('aria-pressed', String(root.dataset.theme === 'dark'));
 
-    menuButton.addEventListener('click', () => {
-      const isOpen = siteNav.classList.toggle('is-open');
-      menuButton.setAttribute('aria-expanded', String(isOpen));
-      menuButton.setAttribute('aria-label', isOpen ? '메뉴 닫기' : '메뉴 열기');
+    toggle.addEventListener('click', () => {
+      root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+      try { localStorage.setItem('theme', root.dataset.theme); } catch (e) {}
+      syncToggle();
     });
-
-    if (filter) {
-      filter.addEventListener('change', (event) => {
-        cards.forEach((card) => {
-          card.hidden = event.target.value !== 'all' && card.dataset.type !== event.target.value;
-        });
-      });
-    }
-
-    const setActiveSection = () => {
-      let currentId = 'about';
-      sections.forEach((section) => {
-        const rect = section.getBoundingClientRect();
-        if (rect.top <= 180 && rect.bottom >= 180) {
-          currentId = section.id;
-        }
-      });
-
-      sectionLinks.forEach((link) => {
-        const isActive = link.getAttribute('href') === `#${currentId}`;
-        link.classList.toggle('active', isActive);
-      });
-    };
-
-    window.addEventListener('scroll', setActiveSection, { passive: true });
-    setActiveSection();
+    syncToggle();
   </script>
 </body>
 </html>
